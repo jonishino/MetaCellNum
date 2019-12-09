@@ -38,6 +38,8 @@ CHR	LOC		 D1	m1	D2	m2
 Estimate the founder population size of a metastatic tumor using the function ‘mleNb’ assuming 
 purity of the primary tumor sample, pur1=0.5, and purity of the metastatic tumor sample, pur2=0.4.
 
+The option disp=T prints the process of the estimation.
+
 ```R
 pur1=0.5
 pur2=0.4
@@ -52,7 +54,7 @@ Show the estimated founder population size.
 eNb
 ```
 
-Get the 100 nonparametric bootstrap samples and calculate the 95% (or 80%) confidence limits.
+Get the 100 nonparametric bootstrap samples and calculate the 95% (or 80%) confidence limits specifying two as the number of clusters for parallel computing.
 
 ```R
 nbs <- mleNb_nbs(dsin=sample[c("D1","m1","D2","m2")],pur1=pur1,pur2=pur2,reps=100,clusters=2,min_m1=2)
