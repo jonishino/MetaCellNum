@@ -16,7 +16,7 @@ source("MetaCellNum.R")
 sample <- read.csv("sample.txt")
 head(sample.txt)
 
-CHR	LOC		  D1	m1	D2	m2
+CHR	LOC		 D1	m1	D2	m2
 1	8075288		46	6	35	8
 1	11115023	102	13	63	0
 1	40705699	66	4	49	5
